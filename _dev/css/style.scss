@@ -1,0 +1,398 @@
+//tools
+@import "_misc/mixins";
+//@import "bootstrap.min.css";
+@import "_misc/normalize";
+
+//fonts
+@import "fonts";
+
+
+//partials
+
+
+* {
+  @include box-sizing(border-box);
+
+}
+
+html, body{
+  min-height: 100%;
+  font-family: Georgia, Verdana, serif;
+  width: 100%;
+  line-height: 1.42;
+}
+
+.header{
+  position: relative;
+  height: 135px;
+  background: white;
+}
+
+
+.nav__list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  text-align: center;
+  height: 100%;
+}
+
+.nav__item{
+  display: inline-block;
+  padding: 5% 0;
+  width: 18%;
+  height: 100%;
+  vertical-align: top;
+  font-family: CricketC;
+
+}
+
+.nav__link{
+  font-size: 20px;
+  padding: 10% 0;
+  font-family: CricketC;
+  color: rgb(197,140,160);
+  text-decoration: none;
+}
+
+.nav__link-active{
+  color: black;
+}
+
+.woman__legs{
+  position: relative;
+  text-align: left;
+ //display: flex;
+ // justify-content: center;
+ // margin-top: 12%;
+}
+
+.woman_img{
+  max-width: 60vw;
+  height: auto;
+}
+
+.descr__container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+
+  -ms-transform: translate(-50%,-50%);
+
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  background: rgba(247,243,244,0.5);
+  padding: 0 7%;
+}
+
+
+
+.descr__h1, .descr__h2{
+  text-align: center;
+  margin: 0;
+}
+
+.descr__h1{
+  font-size: 60px;
+  letter-spacing: 4px;
+  margin-top: 2%;
+
+  @include desktop{
+    font-size: 45px;
+  }
+
+  @include tablets{
+    font-size: 30px;
+  }
+
+  @include phones{
+    font-size: 24px;
+  }
+}
+
+.descr__p{
+  margin: 0;
+  padding: 0;
+  color: rgb(197,140,160);
+  font-size: 44px;
+  text-align: right;
+  margin-top: -3%;
+
+  @include desktop{
+    font-size: 40px;
+  }
+
+  @include tablets{
+    font-size: 28px;
+  }
+
+  @include phones{
+    font-size: 24px;
+  }
+
+}
+
+.descr__h2{
+  font-family: CricketC;
+  color: rgb(149,10,52);
+  font-size: 50px;
+  letter-spacing: 4px;
+
+  @include desktop{
+    font-size: 40px;
+  }
+
+  @include tablets{
+    font-size: 22px;
+    margin-top: -10px;
+  }
+
+  //@include phones{
+  //  font-size: 24px;
+  //}
+}
+
+.man__body{
+  position: relative;
+  text-align: left;
+  background: #EAE1E2;
+  margin-top: 100px;
+
+  & img{
+    display: block;
+  }
+}
+
+.market__item{
+  position: absolute;
+  text-align: left;
+
+  &-fotoright{
+    z-index: 1;
+    background: rgba(247,243,244,0.5);
+    bottom: -13%;
+    right: 8%;
+    padding: 2% 1% 8% 1%;;
+    font-size: 28px;
+
+    & h3{
+      font-size: 52px;
+
+      @include desktop{
+        font-size: 48px;
+      }
+
+      @include tablets{
+        font-size: 26px;
+        margin-bottom: 6%;
+      }
+
+      //@include phones{
+      //  font-size: 24px;
+      //}
+
+    }
+
+    & div{
+      font-size: 26px;
+
+      @include desktop{
+        font-size: 22px;
+      }
+
+      @include tablets{
+        font-size: 22px;
+        margin-top: -10px;
+      }
+
+      //@include phones{
+      //  font-size: 24px;
+      //}
+
+    }
+
+    & button{
+      font-size: 28px;
+    }
+
+  }
+
+  &-fotoleft{
+    z-index: 1;
+    background: rgba(247,243,244,0.5);
+    bottom: 8%;
+    left: 8%;
+    padding: 3%;
+    font-size: 28px;
+
+    & h3{
+      font-size: 52px;
+
+      @include desktop{
+        font-size: 48px;
+      }
+
+      @include tablets{
+        font-size: 26px;
+        margin-bottom: 6%;
+      }
+
+      //@include phones{
+      //  font-size: 24px;
+      //}
+
+    }
+
+    & div{
+      font-size: 26px;
+
+      @include desktop{
+        font-size: 22px;
+      }
+
+      @include tablets{
+        font-size: 22px;
+        margin-top: -10px;
+      }
+
+      //@include phones{
+      //  font-size: 24px;
+      //}
+
+    }
+
+    & button{
+      font-size: 28px;
+    }
+
+  }
+
+
+}
+
+.market__item-clear {
+  top: 29%;
+  right: 16%;
+
+  @include desktop{
+    right: 9%;
+  }
+
+  @include tablets{
+    right: 3%;
+  }
+
+  //@include phones{
+  //  font-size: 24px;
+  //}
+}
+
+.market__title{
+  padding: 0;
+  margin: 0;
+  font-size: 74px;
+
+  @include desktop{
+    font-size: 64px;
+  }
+
+  @include tablets{
+    font-size: 48px;
+
+  }
+
+  //@include phones{
+  //  font-size: 24px;
+  //}
+}
+
+.market__text{
+  margin-top: 4%;
+  padding: 0;
+  margin: 0;
+  font-size: 34px;
+
+  @include desktop{
+    font-size: 28px;
+  }
+
+  @include tablets{
+    font-size: 22px;
+
+  }
+
+  //@include phones{
+  //  font-size: 24px;
+  //}
+}
+
+.market__button{
+  text-transform: uppercase;
+  font-size: 32px;
+  background: rgb(197,140,160);
+  color: white;
+  border: none;
+  margin-top: 7%;
+
+  @include desktop{
+    font-size: 28px;
+  }
+
+  @include tablets{
+    font-size: 24px;
+
+  }
+
+  //@include phones{
+  //  font-size: 24px;
+  //}
+}
+
+.th__minutes{
+  text-align: center;
+  margin-bottom: 110px;
+  margin-top: 50px;
+
+  & h2{
+    font-size: 40px;
+    letter-spacing: 1px;
+
+    @include tablets{
+      font-size: 26px;
+
+    }
+  }
+
+
+  & span{
+    color: rgb(197,140,160);
+  }
+
+  }
+.foto__section{
+  position: relative;
+  text-align: right;
+}
+
+.foto__cont{
+  width: 55%;
+  margin-left: 36%;
+  margin-bottom: 10%;
+
+  &-left{
+    margin-left: 5%;
+  }
+
+  & img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @include tablets{
+    margin-bottom: 25%;
+  }
+}
+
