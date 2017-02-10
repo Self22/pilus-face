@@ -1,0 +1,99 @@
+.services {
+
+}
+.services__title {
+  text-align: center;
+  font-size: 40px;
+
+}
+.service__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 5%;
+
+  @include tablets{
+    margin-left: 5%;
+  }
+
+  @include phones{
+    margin-left: 5%;
+  }
+
+}
+.service__item {
+  padding: 14px;
+  position: relative;
+  margin-bottom: 35px;
+  background: white;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+  min-height: 450px;
+
+  @include phones{
+    min-height: 400px;
+  }
+}
+.service__title {
+     display: inline-block;
+  font-size: 48px;
+  font-family: CricketC;
+  color: #c58ca0;
+  margin-left: 3%;
+
+  @include desktop{
+    font-size: 38px;
+  }
+
+  @include phones{
+    margin-bottom: 0;
+  }
+
+}
+.service__zone {
+  color: #441430;
+      display: inline-block;
+  font-size: 33px;
+  margin-left: 2%;
+
+  @include desktop{
+    font-size: 32px;
+  }
+}
+.service__descr {
+  margin: 0 3% 0 3%;
+  font-family: Roboto;
+  font-size: 19px;
+  margin-bottom: 110px;
+
+  @include phones{
+    font-size: 14px;
+  }
+}
+.service__time {
+  position: absolute;
+  bottom: 90px;
+  left: 6%;
+  font-size: 26px;
+}
+.service__price {
+  position: absolute;
+  right: 14px;
+  bottom: 85px;
+  font-size: 35px;
+  color: #c58ca0;
+
+  @include desktop{
+    font-size: 35px;
+  }
+
+  @include phones{
+    font-size: 22px;
+  }
+
+}
+.market__button-price {
+  position: absolute;
+  padding: 0 5%;
+  font-size: 24px;
+
+}

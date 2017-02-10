@@ -5,8 +5,6 @@ var gulp = require('gulp'),
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
-// postcss = require('gulp-postcss'),
-// flexibility = require('postcss-flexibility'),
     sourcemaps = require('gulp-sourcemaps'),
     cleanCSS = require('gulp-clean-css'),
     notify = require('gulp-notify'),
@@ -14,7 +12,6 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
-//pug = require('gulp-pug'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
@@ -69,7 +66,6 @@ gulp.task('html:build', function () {
                 }
             })
         }))
-        //.pipe(pug({pretty: true})) // ��������� pug ��� ������ ����������� html �� ����������
         .pipe(gulp.dest(path.dest.html)) //�������� �� � ����� build
         .pipe(reload({stream: true})); //� ������������ ��� ������ ��� ����������
 });

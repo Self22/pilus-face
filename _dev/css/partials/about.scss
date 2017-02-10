@@ -1,0 +1,94 @@
+.about__foto-1{
+  position: relative;
+  height: 688px;
+  background: url("../img/about1.jpg") no-repeat;
+  background-size: cover;
+
+  @include tablets{
+    height: 502px;
+    background-size: contain;
+  }
+
+  @include phones{
+    height: 90vh;
+    background-size: contain;
+
+  }
+
+}
+
+.about__hello {
+  position: absolute;
+  width: 50%;
+  background: rgba(247,243,244,.8);
+  top: 60%;
+  text-align: center;
+  left: 6%;
+
+  @include tablets{
+    width: 58%;
+    top: 35%;
+    left: 6%;
+  }
+
+  @include phones{
+    left: 0;
+    top: 64%;
+    width: 100%;
+    background: transparent;
+    padding: 0 4% 0 4%;
+  }
+
+}
+.about__hello-title {
+  font-size: 40px;
+  margin-bottom: 0;
+  margin-top: 8px;
+  @include tablets{
+    font-size: 32px;
+  }
+}
+.about__hello-descr {
+  font-family: CricketC;
+  color: #c58ca0;
+  @include tablets{
+    font-size: 22px;
+  }
+
+}
+.about__descr {
+  padding: 9%;
+  font-size: 20px;
+}
+.about__foto-2 {
+  height: 688px;
+  background: url("../img/about2.jpg") no-repeat;
+  background-size: cover;
+
+  @include tablets{
+    height: 502px;
+    background-size: contain;
+  }
+
+  @include phones{
+    height: 303px;
+    background-size: contain;
+
+  }
+}
+.about__foto-3 {
+  text-align: center;
+  margin: auto;
+  width: 82%;
+
+  & img{
+    width: 100%;
+    height: auto;
+  }
+
+}
+.market__button-about {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}

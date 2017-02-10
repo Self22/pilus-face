@@ -1,0 +1,72 @@
+.map {
+
+}
+.map__img {
+
+  & img{
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+.contact__info {
+  font-size: 28px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+
+  & div{
+  margin-top: 25px;}
+
+  @include phones{
+    font-size: 16px;
+
+  }
+}
+
+
+.contact__info-address {
+
+}
+.contact__info-tel {
+
+}
+.contact__info-time {
+
+}
+.contact__form {
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 3px 3px 19px rgba(216, 141, 162,0.4);
+  padding: 15px 4% 15px 4%;
+  margin-top: 50px;
+
+  @include tablets{
+    width: 100%;
+  }
+
+  @include phones{
+    width: 100%;
+
+  }
+
+}
+
+.form__title {
+  font-size: 40px;
+
+  @include phones{
+    font-size: 30px;
+
+  }
+}
+.form__text{
+  font-size: 24px;
+
+  @include phones{
+    font-size: 18px;
+
+  }
+}
