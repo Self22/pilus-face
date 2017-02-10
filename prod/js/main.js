@@ -1,0 +1,2 @@
+"use strict";$(document).ready(function(){!function(){var s=!0;$(".question__nav").on("click",function(i){var e=$(this),n=(e.closest(".questions__acc"),e.closest(".questions__item")),t=n.find(".question__answer"),a=500;s&&(s=!1,n.hasClass("active")?(n.removeClass("active"),t.slideUp(function(){s=!0})):(n.addClass("active").siblings().removeClass("active").find(".question__answer").slideUp(a),t.slideDown(a,function(){s=!0})))})}()});
+//# sourceMappingURL=main.js.map

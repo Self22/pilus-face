@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    cleanCSS = require('gulp-clean-css'),
+// cleanCSS = require('gulp-clean-css'),
     notify = require('gulp-notify'),
     plumber = require('gulp-plumber'),
     imagemin = require('gulp-imagemin'),
@@ -86,7 +86,7 @@ gulp.task('css:build', function () {
         .pipe(sourcemaps.init()) //�������������� sourcemap
         .pipe(sass().on('error', sass.logError)) //������������        
         .pipe(prefixer()) //������� ��������� ��������
-        .pipe(cleanCSS()) //������
+        // .pipe(cleanCSS()) //������
         .pipe(sourcemaps.write('.'))//�������� �����
         .pipe(gulp.dest(path.dest.css)) //� � build
         .pipe(reload({stream: true}));
