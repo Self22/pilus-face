@@ -559,22 +559,24 @@ textarea {
       margin-left: 5%; } }
 
 .service__item {
+  font-size: 0;
   padding: 14px;
   position: relative;
   margin-bottom: 35px;
   background: white;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
-  min-height: 450px; }
+  min-height: 380px; }
   @media screen and (max-width: 480px) {
     .service__item {
       min-height: 400px; } }
 
 .service__title {
   display: inline-block;
-  font-size: 48px;
+  font-size: 40px;
   font-family: CricketC;
   color: #c58ca0;
-  margin-left: 3%; }
+  margin-left: 3%;
+  margin-bottom: -13px; }
   @media screen and (max-width: 1200px) {
     .service__title {
       font-size: 38px; } }
@@ -585,7 +587,7 @@ textarea {
 .service__zone {
   color: #441430;
   display: inline-block;
-  font-size: 33px;
+  font-size: 40px;
   margin-left: 2%; }
   @media screen and (max-width: 1200px) {
     .service__zone {
@@ -594,30 +596,55 @@ textarea {
 .service__descr {
   margin: 0 3% 0 3%;
   font-family: Roboto;
-  font-size: 19px;
+  font-size: 14px;
+  color: #4A4A4A;
   margin-bottom: 110px; }
   @media screen and (max-width: 480px) {
     .service__descr {
-      font-size: 14px; } }
+      font-size: 12px; } }
 
 .service__time {
   position: absolute;
-  bottom: 90px;
-  left: 6%;
-  font-size: 26px; }
+  font-family: Georgia;
+  font-size: 21px;
+  line-height: 14.95px;
+  letter-spacing: 0.21px;
+  color: #441730;
+  bottom: 100px;
+  left: 6%; }
+  @media screen and (max-width: 480px) {
+    .service__time {
+      font-size: 18px; } }
+  .service__time span {
+    font-size: 20px; }
+    @media screen and (max-width: 480px) {
+      .service__time span {
+        font-size: 14px; } }
 
 .service__price {
   position: absolute;
   right: 14px;
-  bottom: 85px;
-  font-size: 35px;
-  color: #c58ca0; }
+  bottom: 95px;
+  font-size: 40px;
+  font-family: Georgia;
+  line-height: 43.12px;
+  letter-spacing: 0.43px;
+  color: #C58CA0; }
+  .service__price span {
+    font-family: Georgia;
+    line-height: 16.45px;
+    letter-spacing: 0.16px;
+    color: #C58CA0;
+    font-size: 26px; }
+    @media screen and (max-width: 480px) {
+      .service__price span {
+        font-size: 18px; } }
   @media screen and (max-width: 1200px) {
     .service__price {
       font-size: 35px; } }
   @media screen and (max-width: 480px) {
     .service__price {
-      font-size: 22px; } }
+      font-size: 28px; } }
 
 .market__button-price {
   position: absolute;
@@ -978,9 +1005,11 @@ a, a:hover, a:focus {
   margin: 0; }
 
 .descr__h1 {
-  font-size: 74px;
-  letter-spacing: 4px;
-  margin-top: 2%; }
+  font-family: Georgia;
+  font-size: 107px;
+  color: #441730;
+  margin-top: 2%;
+  margin-bottom: -15px; }
   @media screen and (max-width: 1200px) {
     .descr__h1 {
       font-size: 74px; } }
@@ -994,8 +1023,9 @@ a, a:hover, a:focus {
 .descr__p {
   margin: 0;
   padding: 0;
-  color: #c58ca0;
-  font-size: 70px;
+  font-family: Georgia;
+  font-size: 81px;
+  color: #C58CA0;
   text-align: right;
   margin-top: -3%; }
   @media screen and (max-width: 1200px) {
@@ -1010,10 +1040,10 @@ a, a:hover, a:focus {
 
 .descr__h2 {
   font-family: CricketC;
-  color: #950a34;
-  font-size: 50px;
-  letter-spacing: 4px;
-  font-weight: 800; }
+  font-size: 76px;
+  color: #950A34;
+  font-weight: 600;
+  margin-bottom: -30px; }
   @media screen and (max-width: 1200px) {
     .descr__h2 {
       font-size: 50px; } }
@@ -1116,7 +1146,11 @@ a, a:hover, a:focus {
 
 .market__item {
   position: absolute;
-  text-align: left; }
+  text-align: left;
+  width: 50%; }
+  @media screen and (max-width: 480px) {
+    .market__item {
+      width: 100%; } }
   .market__item-fotoright {
     z-index: 1;
     background: rgba(247, 243, 244, 0.5);
@@ -1196,7 +1230,7 @@ a, a:hover, a:focus {
       font-size: 28px; }
 
 .market__item-clear {
-  top: 29%;
+  top: 20%;
   right: 16%; }
   @media screen and (max-width: 1200px) {
     .market__item-clear {
@@ -1214,7 +1248,8 @@ a, a:hover, a:focus {
 .market__title {
   padding: 0;
   margin: 0;
-  font-size: 74px; }
+  font-size: 74px;
+  margin-bottom: 20px; }
   @media screen and (max-width: 1200px) {
     .market__title {
       font-size: 64px; } }
@@ -1271,7 +1306,8 @@ a, a:hover, a:focus {
       .market__button-price {
         font-size: 18px; } }
   .market__button-first {
-    font-size: 42px; }
+    font-size: 42px;
+    margin-top: 50px; }
     @media screen and (max-width: 768px) {
       .market__button-first {
         font-size: 30px; } }
