@@ -434,9 +434,11 @@ a, a:hover, a:focus{
 }
 
 .descr__h1{
-  font-size: 74px;
-  letter-spacing: 4px;
+  font-family : Georgia;
+  font-size : 107px;
+  color : #441730;
   margin-top: 2%;
+  margin-bottom: -15px;
 
   @include desktop{
     font-size: 74px;
@@ -454,8 +456,9 @@ a, a:hover, a:focus{
 .descr__p{
   margin: 0;
   padding: 0;
-  color: rgb(197,140,160);
-  font-size: 70px;
+  font-family : Georgia;
+  font-size : 81px;
+  color : #C58CA0;
   text-align: right;
   margin-top: -3%;
 
@@ -474,11 +477,11 @@ a, a:hover, a:focus{
 }
 
 .descr__h2{
-  font-family: CricketC;
-  color: rgb(149,10,52);
-  font-size: 50px;
-  letter-spacing: 4px;
-  font-weight: 800;
+  font-family : CricketC;
+  font-size : 76px;
+  color : #950A34;
+  font-weight: 600;
+  margin-bottom: -30px;
 
   @include desktop{
     font-size: 50px;
@@ -727,7 +730,7 @@ a, a:hover, a:focus{
 }
 
 .market__item-clear {
-  top: 29%;
+  top: 20%;
   right: 16%;
 
   @include desktop{
@@ -751,6 +754,7 @@ a, a:hover, a:focus{
   padding: 0;
   margin: 0;
   font-size: 74px;
+  margin-bottom: 20px;
 
   @include desktop{
     font-size: 64px;
@@ -838,6 +842,7 @@ a, a:hover, a:focus{
 
   &-first{
     font-size: 42px;
+    margin-top: 50px;
 
     @include tablets{
       font-size: 30px;
