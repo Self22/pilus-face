@@ -237,6 +237,8 @@ a, a:hover, a:focus{
 
 .navbar-default .navbar-nav>li>a{
   color: #D88DA2;
+  padding-right: 0;
+  padding-left: 0;
 
   @include tablets{
   padding-bottom: 25px;}
@@ -273,15 +275,21 @@ a, a:hover, a:focus{
 .nav__item{
   display: inline-block;
   padding-top: 3%;
-  width: 13%;
+  padding-right: 2%;
+  float: right;
   height: 100%;
   vertical-align: top;
   font-family: CricketC;
 
+  @include desktop{
+    padding-right: 1%;
+  }
+
 }
 
 .nav__item-logo{
-  width: 48%;
+  display: inline-block;
+  width: 42%;
   margin-top: -22px;
   padding-left: 3%;
 
@@ -301,6 +309,10 @@ a, a:hover, a:focus{
   font-family: CricketC;
   color: rgb(197,140,160);
   text-decoration: none;
+
+  @include desktop{
+    font-size: 20px;
+  }
 
   &-logo{
     font-size: 0;
