@@ -80,7 +80,7 @@
 .service__time {
   position: absolute;
   font-family : Georgia;
-  font-size : 21px;
+  font-size : 28px;
   line-height : 14.95px;
   letter-spacing : 0.21px;
   color : #441730;
@@ -88,7 +88,7 @@
   left: 6%;
 
   @include desktop{
-    font-size: 19px;
+    font-size: 24px;
   }
 
   @include phones{

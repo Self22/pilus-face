@@ -450,7 +450,7 @@ a, a:hover, a:focus{
   font-size : 107px;
   color : #441730;
   margin-top: 2%;
-  margin-bottom: -15px;
+  margin-bottom: -5px;
 
   @include desktop{
     font-size: 74px;
@@ -493,7 +493,7 @@ a, a:hover, a:focus{
   font-size : 76px;
   color : #950A34;
   font-weight: 600;
-  margin-bottom: -30px;
+  margin-bottom: -11px;
 
   @include desktop{
     font-size: 50px;
@@ -522,7 +522,7 @@ a, a:hover, a:focus{
 
   @include phones{
     background-size: cover;
-    margin-bottom: 285px;
+    margin-bottom: 320px;
   }
 
   & img{
@@ -624,7 +624,7 @@ a, a:hover, a:focus{
   width: 50%;
 
   @include phones{
-    width: 100%;
+    width: 86%;
   }
 
   &-fotoright{
@@ -867,6 +867,7 @@ a, a:hover, a:focus{
 
     @include phones{
       font-size: 16px;
+      margin-top: 25px;
     }
   }
 }
@@ -875,6 +876,10 @@ a, a:hover, a:focus{
   text-align: center;
   margin-bottom: 110px;
   margin-top: 50px;
+
+  @include desktop{
+    margin-bottom: 200px;
+  }
 
   & h2{
     font-size: 40px;
